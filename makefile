@@ -22,7 +22,7 @@ else ifeq ($(shell uname -p), unknown) # Docker
 else                                   # UTCS
     PYTHON   := python3.5
     PIP      := pip3.5
-    PYLINT   := pylint3
+    PYLINT   := pylint3.5
     COVERAGE := coverage-3.5
     PYDOC    := pydoc3.4
     AUTOPEP8 := autopep8
@@ -84,6 +84,7 @@ status:
 sync:
 	@rsync -r -t -u -v --delete              \
     --include "Hello.py"                     \
+    --include "Docker.sh"                    \
     --include "Assertions.py"                \
     --exclude "*"                            \
     ../../examples/python/ examples

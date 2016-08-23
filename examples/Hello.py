@@ -20,23 +20,23 @@ Developed in 1989 by Guido van Rossum of the Netherlands, now at Dropbox.
 Python is procedural, object-oriented, dynamically typed, and garbage collected.
 
 
+% which python
+/usr/local/bin/python
+
 
 % python --version
 Python 2.7.10
 
 
-
-% python3 --version
-Python 3.5.1
-
+% which python3.5
+/usr/local/bin/python3.5
 
 
-% python3 -m Hello
-Nothing to be done.
+% python3.5 --version
+Python 3.5.2
 
 
-
-% python3 Hello.py
+% python3.5 ./Hello.py
 Nothing to be done.
 
 
@@ -47,10 +47,11 @@ Nothing to be done.
 
 
 
-% python3
+% python3.5
 Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
+
 
 >>> import Hello
 Nothing to be done.
@@ -59,29 +60,31 @@ Nothing to be done.
 
 
 
-% python -m cProfile Hello.py
+% python3.5 -m cProfile Hello.py
 Nothing to be done.
-         2 function calls in 0.000 seconds
+         4 function calls in 0.000 seconds
 
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    0.000    0.000 Hello.py:11(<module>)
+        1    0.000    0.000    0.000    0.000 Hello.py:16(<module>)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 
 
 
-% python3
+% python3.5
 Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> help()
 
-Welcome to Python 3.4!  This is the interactive help utility.
+Welcome to Python 3.5's help utility!
 
 If this is your first time using Python, you should definitely check out
-the tutorial on the Internet at http://docs.python.org/3.4/tutorial/.
+the tutorial on the Internet at http://docs.python.org/3.5/tutorial/.
 
 Enter the name of any module, keyword, or topic to get help on writing
 Python programs and using Python modules.  To quit this help utility and
@@ -181,10 +184,11 @@ has the same effect as typing a particular string at the help> prompt.
 
 
 
-% python3
+% python3.5
 Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
+
 
 >>> import this
 The Zen of Python, by Tim Peters
@@ -209,18 +213,20 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 
+
 >>> quit()
 
 
-
-% python3
+% python3.5
 Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 
+
 >>> from __future__ import braces
   File "<stdin>", line 1
 SyntaxError: not a chance
+
 
 >>> quit()
 """
