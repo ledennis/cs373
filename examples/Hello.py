@@ -48,8 +48,8 @@ Nothing to be done.
 
 
 % python3.5
-Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
-[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Python 3.5.2 (default, Aug 22 2016, 14:49:41)
+[GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 
 
@@ -75,8 +75,8 @@ Nothing to be done.
 
 
 % python3.5
-Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
-[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Python 3.5.2 (default, Aug 22 2016, 14:49:41)
+[GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> help()
@@ -185,8 +185,8 @@ has the same effect as typing a particular string at the help> prompt.
 
 
 % python3.5
-Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
-[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Python 3.5.2 (default, Aug 22 2016, 14:49:41)
+[GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 
 
@@ -218,8 +218,8 @@ Namespaces are one honking great idea -- let's do more of those!
 
 
 % python3.5
-Python 3.5.1 (v3.5.1:37a07cee5969, Dec  5 2015, 21:12:44)
-[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Python 3.5.2 (default, Aug 22 2016, 14:49:41)
+[GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 
 
