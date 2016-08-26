@@ -88,6 +88,16 @@ sync:
     --include "Assertions.py"                \
     --exclude "*"                            \
     ../../examples/python/ examples
+	@rsync -r -t -u -v --delete              \
+    --include "Hello.py"                     \
+    --include "UnitTests1.py"                \
+    --include "UnitTests2.py"                \
+    --include "UnitTests3.py"                \
+    --include "Coverage1.py"                 \
+    --include "Coverage2.py"                 \
+    --include "Coverage3.py"                 \
+    --exclude "*"                            \
+    ../../exercises/python/ exercises
 
 test:
 	make clean

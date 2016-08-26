@@ -56,8 +56,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import Hello
 Nothing to be done.
 
->>> quit()
 
+>>> quit()
 
 
 % python3.5 -m cProfile Hello.py
@@ -73,11 +73,11 @@ Nothing to be done.
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 
 
-
 % python3.5
 Python 3.5.2 (default, Aug 22 2016, 14:49:41)
 [GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
+
 
 >>> help()
 
@@ -94,6 +94,7 @@ To get a list of available modules, keywords, symbols, or topics, type
 "modules", "keywords", "symbols", or "topics".  Each module also comes
 with a one-line summary of what it does; to list the modules whose name
 or summary contain a given string such as "spam", type "modules spam".
+
 
 help> range
 
@@ -183,7 +184,6 @@ has the same effect as typing a particular string at the help> prompt.
 >>> quit()
 
 
-
 % python3.5
 Python 3.5.2 (default, Aug 22 2016, 14:49:41)
 [GCC 4.8.4] on linux
@@ -212,7 +212,6 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-
 
 >>> quit()
 
