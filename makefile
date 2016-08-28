@@ -32,6 +32,8 @@ clean:
 	cd examples; make clean
 	@echo
 	cd exercises; make clean
+	@echo
+	cd projects/collatz; make clean
 
 config:
 	git config -l
@@ -70,6 +72,7 @@ push:
 	git add examples
 	git add exercises
 	git add makefile
+	git add projects/collatz
 	git commit -m "another commit"
 	git push
 	git status
@@ -98,6 +101,15 @@ sync:
     --include "Coverage3.py"                 \
     --exclude "*"                            \
     ../../exercises/python/ exercises
+	@rsync -r -t -u -v --delete              \
+    --include "Collatz.py"                   \
+    --include "RunCollatz.in"                \
+    --include "RunCollatz.py"                \
+    --include "RunCollatz.out"               \
+    --include "TestCollatz.py"               \
+    --include "TestCollatz.out"              \
+    --exclude "*"                            \
+    ../../projects/python/collatz/ projects/collatz
 
 test:
 	make clean
@@ -105,6 +117,8 @@ test:
 	cd examples; make test
 	@echo
 	cd exercises; make test
+	@echo
+	cd projects/collatz; make test
 
 versions:
 	which make
