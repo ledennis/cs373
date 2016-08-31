@@ -89,6 +89,7 @@ sync:
     --include "Hello.py"                     \
     --include "Docker.sh"                    \
     --include "Assertions.py"                \
+    --include "Exceptions.py"                \
     --exclude "*"                            \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete              \
@@ -99,6 +100,10 @@ sync:
     --include "Coverage1.py"                 \
     --include "Coverage2.py"                 \
     --include "Coverage3.py"                 \
+    --include "IsPrime1.py"                  \
+    --include "IsPrime1T.py"                 \
+    --include "IsPrime2.py"                  \
+    --include "IsPrime2T.py"                 \
     --exclude "*"                            \
     ../../exercises/python/ exercises
 	@rsync -r -t -u -v --delete              \
