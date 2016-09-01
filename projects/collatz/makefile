@@ -113,3 +113,30 @@ status:
 	git status
 
 test: Collatz.html Collatz.log RunCollatz.tmp TestCollatz.tmp collatz-tests check
+
+versions:
+	which make
+	make --version
+	@echo
+	which git
+	git --version
+	@echo
+	which $(PYTHON)
+	$(PYTHON) --version
+	@echo
+	which $(PIP)
+	$(PIP) --version
+	@echo
+	which $(PYLINT)
+	$(PYLINT) --version
+	@echo
+	which $(COVERAGE)
+	$(COVERAGE) --version
+	@echo
+	which $(PYDOC)
+	$(PYDOC) --version
+	@echo
+	which $(AUTOPEP8)
+	$(AUTOPEP8) --version
+	@echo
+	$(PIP) list
