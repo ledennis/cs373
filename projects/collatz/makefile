@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := test
+
 FILES :=                              \
     Collatz.html                      \
     Collatz.log                       \

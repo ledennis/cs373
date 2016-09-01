@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := test
+
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5
     PIP      := pip3.5
