@@ -8,6 +8,14 @@ Docker version 1.12.0, build 8eab29e
 
 % docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+
+
+% docker pull gpdowning/python
+...
+
+
+% docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 gpdowning/python    latest              9e0a05a1bd40        7 days ago          783.1 MB
 python              3.5.2               58528474c16a        2 weeks ago         683.2 MB
 
