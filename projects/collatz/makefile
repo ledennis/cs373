@@ -95,7 +95,6 @@ clean:
 	rm -f  RunCollatz.tmp
 	rm -f  TestCollatz.tmp
 	rm -rf __pycache__
-	rm -rf collatz-tests
 
 config:
 	git config -l
