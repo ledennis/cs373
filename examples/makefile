@@ -1,10 +1,10 @@
 .DEFAULT_GOAL := test
 
-FILES :=                    \
-    Hello                   \
-    Exceptions              \
-    Variables               \
-    Copy                    \
+FILES :=       \
+    Hello      \
+    Exceptions \
+    Variables  \
+    Copy       \
     Cache
 
 ifeq ($(shell uname), Darwin)          # Apple
