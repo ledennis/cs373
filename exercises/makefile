@@ -1,6 +1,8 @@
 .DEFAULT_GOAL := test
 
-FILES :=
+FILES :=      \
+    IsPrime1T \
+    IsPrime2T
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5

@@ -93,6 +93,9 @@ sync:
     --include "Docker.sh"                    \
     --include "Assertions.py"                \
     --include "Exceptions.py"                \
+    --include "Variables.py"                 \
+    --include "Cache.py"                     \
+    --include "Copy.py"                      \
     --exclude "*"                            \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete              \
@@ -107,6 +110,7 @@ sync:
     --include "IsPrime1T.py"                 \
     --include "IsPrime2.py"                  \
     --include "IsPrime2T.py"                 \
+    --include "FactorialT.py"                \
     --exclude "*"                            \
     ../../exercises/python/ exercises
 	@rsync -r -t -u -v --delete              \
