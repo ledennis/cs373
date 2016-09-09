@@ -5,6 +5,8 @@ FILES :=       \
     Exceptions \
     Variables  \
     Copy       \
+    Types      \
+    Operators  \
     Cache
 
 ifeq ($(shell uname), Darwin)          # Apple
