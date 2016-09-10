@@ -3,6 +3,7 @@
 # pylint: disable = bad-whitespace
 # pylint: disable = invalid-name
 # pylint: disable = missing-docstring
+# pylint: disable = redefined-variable-type
 
 # -------
 # Copy.py
@@ -14,6 +15,10 @@ print("Copy.py")
 
 x = [2, 3, 4]
 y = [1, x, 5]
+
+assert x[1:2] == [3]
+assert x[1:3] == [3, 4]
+assert x[0:3] == [2, 3, 4]
 
 z = y[:]
 assert y    is not z
@@ -30,5 +35,21 @@ assert y    is not z
 assert y    ==     z
 assert y[1] is not z[1]
 assert y[1] ==     z[1]
+
+x = (2, 3, 4)
+y = (1, x, 5)
+
+assert x[1:2] == (3,)
+assert x[1:3] == (3, 4)
+assert x[0:3] == (2, 3, 4)
+
+z = y[:]
+assert y is z
+
+z = copy(y)
+assert y is z
+
+z = deepcopy(y)
+assert y is z
 
 print("Done.")
