@@ -18,12 +18,14 @@ print("Types.py")
 
 b = True
 b = False
+b = bool()
 assert isinstance(b,    bool)
 assert isinstance(bool, type)
 assert issubclass(bool, bool)
 assert issubclass(bool, object)
 
 i = 2
+i = int(2)
 assert isinstance(i,   int)
 assert isinstance(int, type)
 assert issubclass(int, int)
@@ -33,6 +35,7 @@ assert     issubclass(bool, int)
 assert not issubclass(int,  bool)
 
 f = 2.3
+f = float(2.3)
 assert isinstance(f,     float)
 assert isinstance(float, type)
 assert issubclass(float, float)
@@ -74,7 +77,7 @@ assert isinstance(set, type)
 assert issubclass(set, set)
 assert issubclass(set, object)
 
-w = frozenset([2, "abc", 3.45])
+w = frozenset((2, "abc", 3.45))
 assert isinstance(w,         frozenset)
 assert isinstance(frozenset, type)
 assert issubclass(frozenset, frozenset)
