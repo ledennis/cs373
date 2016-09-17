@@ -98,6 +98,7 @@ sync:
     --include "Types.py"                     \
     --include "Operators.py"                 \
     --include "Cache.py"                     \
+    --include "Iteration.py"                 \
     --exclude "*"                            \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete              \
@@ -115,6 +116,7 @@ sync:
     --include "Factorial.py"                 \
     --include "FactorialT.py"                \
     --include "ReduceT.py"                   \
+    --include "RMSET.py"                     \
     --exclude "*"                            \
     ../../exercises/python/ exercises
 	@rsync -r -t -u -v --delete              \
