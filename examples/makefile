@@ -2,6 +2,10 @@
 
 FILES :=       \
     Hello      \
+    UnitTests3 \
+    Coverage1  \
+    Coverage2  \
+    Coverage3  \
     Exceptions \
     Variables  \
     Copy       \
@@ -42,6 +46,24 @@ endif
 
 .pylintrc:
 	$(PYLINT) --disable=locally-disabled --reports=no --generate-rcfile > $@
+
+Coverage1.pyx: Coverage1.py .pylintrc
+	-$(PYLINT) $<
+	$(PYTHON) ./$<
+	$(COVERAGE) run --branch $<
+	$(COVERAGE) report -m
+
+Coverage2.pyx: Coverage2.py .pylintrc
+	-$(PYLINT) $<
+	$(PYTHON) ./$<
+	$(COVERAGE) run --branch $<
+	$(COVERAGE) report -m
+
+Coverage3.pyx: Coverage3.py .pylintrc
+	-$(PYLINT) $<
+	$(PYTHON) ./$<
+	$(COVERAGE) run --branch $<
+	$(COVERAGE) report -m
 
 %.pyx: %.py .pylintrc
 	-$(PYLINT) $<
