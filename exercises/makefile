@@ -38,15 +38,15 @@ endif
 .pylintrc:
 	$(PYLINT) --disable=locally-disabled --reports=no --generate-rcfile > $@
 
-RMSET.pyx: RMSE.py .pylintrc
+RMSET.pyx: RMSE.py RMSET.py .pylintrc
 	-$(PYLINT) $<
 	-$(PYLINT) $(@:.pyx=.py)
 	$(PYTHON) ./$<
 
-%.pyx: %.py .pylintrc
+%T.pyx: %.py %T.py .pylintrc
 	-$(PYLINT) $<
 	-$(PYLINT) $(@:.pyx=.py)
-	$(COVERAGE) run --branch $<
+	$(COVERAGE) run --branch $(@:.pyx=.py)
 	$(COVERAGE) report -m
 
 clean:
