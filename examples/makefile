@@ -49,25 +49,25 @@ endif
 
 Coverage1.pyx: Coverage1.py .pylintrc
 	-$(PYLINT) $<
-	$(PYTHON) ./$<
+	$(PYTHON) $<
 	$(COVERAGE) run --branch $<
 	$(COVERAGE) report -m
 
 Coverage2.pyx: Coverage2.py .pylintrc
 	-$(PYLINT) $<
-	$(PYTHON) ./$<
+	$(PYTHON) $<
 	$(COVERAGE) run --branch $<
 	$(COVERAGE) report -m
 
 Coverage3.pyx: Coverage3.py .pylintrc
 	-$(PYLINT) $<
-	$(PYTHON) ./$<
+	$(PYTHON) $<
 	$(COVERAGE) run --branch $<
 	$(COVERAGE) report -m
 
 %.pyx: %.py .pylintrc
 	-$(PYLINT) $<
-	$(PYTHON) ./$<
+	$(PYTHON) $<
 
 clean:
 	rm -f  .pylintrc

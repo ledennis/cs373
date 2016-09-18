@@ -41,7 +41,7 @@ endif
 RMSET.pyx: RMSE.py RMSET.py .pylintrc
 	-$(PYLINT) $<
 	-$(PYLINT) $(@:.pyx=.py)
-	$(PYTHON) ./$<
+	$(PYTHON) $<
 
 %T.pyx: %.py %T.py .pylintrc
 	-$(PYLINT) $<
