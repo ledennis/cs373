@@ -62,7 +62,7 @@ Collatz.log:
 RunCollatz.tmp: Collatz.py RunCollatz.in RunCollatz.out RunCollatz.py .pylintrc
 	-$(PYLINT) Collatz.py
 	-$(PYLINT) RunCollatz.py
-	$(PYTHON) ./RunCollatz.py < RunCollatz.in > RunCollatz.tmp
+	$(PYTHON) RunCollatz.py < RunCollatz.in > RunCollatz.tmp
 	diff RunCollatz.tmp RunCollatz.out
 
 TestCollatz.tmp: Collatz.py TestCollatz.py .pylintrc
