@@ -14,7 +14,7 @@ FILES :=           \
     Cache          \
     Iteration      \
     Comprehensions \
-    Lambda         \
+    Lambdas        \
     Yield
 
 ifeq ($(shell uname), Darwin)          # Apple

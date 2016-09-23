@@ -4,8 +4,7 @@ FILES :=       \
     IsPrime1T  \
     IsPrime2T  \
     FactorialT \
-    ReduceT    \
-    RMSET
+    ReduceT
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5
