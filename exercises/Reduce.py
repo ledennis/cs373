@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
-#pylint: disable = consider-using-enumerate
+# pylint: disable = bad-whitespace
+# pylint: disable = consider-using-enumerate
+# pylint: disable = invalid-name
+# pylint: disable = missing-docstring
 
 # ---------
 # Reduce.py

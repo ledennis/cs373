@@ -1,18 +1,21 @@
 .DEFAULT_GOAL := test
 
-FILES :=       \
-    Hello      \
-    UnitTests3 \
-    Coverage1  \
-    Coverage2  \
-    Coverage3  \
-    Exceptions \
-    Variables  \
-    Copy       \
-    Types      \
-    Operators  \
-    Cache      \
-    Iteration
+FILES :=           \
+    Hello          \
+    UnitTests3     \
+    Coverage1      \
+    Coverage2      \
+    Coverage3      \
+    Exceptions     \
+    Variables      \
+    Copy           \
+    Types          \
+    Operators      \
+    Cache          \
+    Iteration      \
+    Comprehensions \
+    Lambda         \
+    Yield
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5

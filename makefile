@@ -105,6 +105,9 @@ sync:
     --include "Operators.py"                 \
     --include "Cache.py"                     \
     --include "Iteration.py"                 \
+    --include "Comprehensions.py"            \
+    --include "Lambdas.py"                   \
+    --include "Yield.py"                     \
     --exclude "*"                            \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete              \
@@ -119,6 +122,7 @@ sync:
     --include "ReduceT.py"                   \
     --include "RMSE.py"                      \
     --include "RMSET.py"                     \
+    --include "MapT.py"                      \
     --exclude "*"                            \
     ../../exercises/python/ exercises
 	@rsync -r -t -u -v --delete              \
