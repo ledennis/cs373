@@ -107,13 +107,14 @@ sync:
     --include "Iteration.py"                 \
     --include "Comprehensions.py"            \
     --include "Yield.py"                     \
-    --include "Lambdas.py"                   \
     --include "Iterables.py"                 \
     --include "FunctionKeywords.py"          \
     --include "FunctionDefaults.py"          \
     --include "FunctionUnpacking.py"         \
     --include "FunctionTuple.py"             \
     --include "FunctionDict.py"              \
+    --include "Lambdas.py"                   \
+    --include "Functions.py"                 \
     --include "Callables.py"                 \
     --exclude "*"                            \
     ../../examples/python/ examples
@@ -129,8 +130,10 @@ sync:
     --include "ReduceT.py"                   \
     --include "RMSE.py"                      \
     --include "RMSET.py"                     \
+    --include "Map.py"                       \
     --include "MapT.py"                      \
-    --include "RangeIteratorT.py"                      \
+    --include "RangeIterator.py"             \
+    --include "RangeIteratorT.py"            \
     --exclude "*"                            \
     ../../exercises/python/ exercises
 	@rsync -r -t -u -v --delete              \
