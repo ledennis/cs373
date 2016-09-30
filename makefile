@@ -106,8 +106,15 @@ sync:
     --include "Cache.py"                     \
     --include "Iteration.py"                 \
     --include "Comprehensions.py"            \
-    --include "Lambdas.py"                   \
     --include "Yield.py"                     \
+    --include "Lambdas.py"                   \
+    --include "Iterables.py"                 \
+    --include "FunctionKeywords.py"          \
+    --include "FunctionDefaults.py"          \
+    --include "FunctionUnpacking.py"         \
+    --include "FunctionTuple.py"             \
+    --include "FunctionDict.py"              \
+    --include "Callables.py"                 \
     --exclude "*"                            \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete              \

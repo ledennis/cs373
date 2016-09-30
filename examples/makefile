@@ -14,8 +14,8 @@ FILES :=           \
     Cache          \
     Iteration      \
     Comprehensions \
-    Lambdas        \
-    Yield
+    Yield          \
+    Lambdas
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5
