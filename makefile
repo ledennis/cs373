@@ -132,7 +132,9 @@ sync:
     --include "RMSET.py"                     \
     --include "Map.py"                       \
     --include "MapT.py"                      \
+    --include "RangeIterator.py"             \
     --include "RangeIteratorT.py"            \
+    --include "RangeT.py"                    \
     --exclude "*"                            \
     ../../exercises/python/ exercises
 	@rsync -r -t -u -v --delete              \
