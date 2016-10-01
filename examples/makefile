@@ -16,6 +16,7 @@ FILES :=              \
     Comprehensions    \
     Yield             \
     Iterables         \
+    Itertools         \
     FunctionKeywords  \
     FunctionDefaults  \
     FunctionUnpacking \

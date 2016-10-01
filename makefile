@@ -108,6 +108,7 @@ sync:
     --include "Comprehensions.py"            \
     --include "Yield.py"                     \
     --include "Iterables.py"                 \
+    --include "Itertools.py"                 \
     --include "FunctionKeywords.py"          \
     --include "FunctionDefaults.py"          \
     --include "FunctionUnpacking.py"         \
