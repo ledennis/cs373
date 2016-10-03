@@ -1,11 +1,13 @@
 .DEFAULT_GOAL := test
 
-FILES :=       \
-    IsPrime1T  \
-    IsPrime2T  \
-    FactorialT \
-    ReduceT    \
-    MapT
+FILES :=           \
+    IsPrime1T      \
+    IsPrime2T      \
+    FactorialT     \
+    ReduceT        \
+    MapT           \
+    RangeIteratorT \
+    RangeT
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5
