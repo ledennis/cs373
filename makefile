@@ -105,18 +105,20 @@ sync:
     --include "Operators.py"                 \
     --include "Cache.py"                     \
     --include "Iteration.py"                 \
+    --include "Lambdas.py"                   \
     --include "Comprehensions.py"            \
     --include "Yield.py"                     \
     --include "Iterables.py"                 \
     --include "Itertools.py"                 \
+    --include "Functions.py"                 \
     --include "FunctionKeywords.py"          \
     --include "FunctionDefaults.py"          \
     --include "FunctionUnpacking.py"         \
     --include "FunctionTuple.py"             \
     --include "FunctionDict.py"              \
-    --include "Lambdas.py"                   \
-    --include "Functions.py"                 \
     --include "Callables.py"                 \
+    --include "Classes.py"                   \
+    --include "Closures.py"                  \
     --exclude "*"                            \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete              \
@@ -137,6 +139,8 @@ sync:
     --include "RangeIteratorT.py"            \
     --include "Range.py"                     \
     --include "RangeT.py"                    \
+    --include "DecoratorsT.py"               \
+    --include "ComplexT.py"                  \
     --exclude "*"                            \
     ../../exercises/python/ exercises
 	@rsync -r -t -u -v --delete              \
