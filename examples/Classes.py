@@ -31,6 +31,7 @@ class A :
         cls.__cv  += 1
 #       sm()           # NameError: name 'sm' is not defined
         A.sm()
+        cls.sm()
 #       self.__iv += 1 # NameError: name 'self' is not defined
 #       self.im()      # NameError: name 'self' is not defined
 
