@@ -24,6 +24,7 @@ FILES :=              \
     FunctionDict      \
     Lambdas           \
     Functions         \
+    Classes           \
     Callables
 
 ifeq ($(shell uname), Darwin)          # Apple
