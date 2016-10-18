@@ -8,7 +8,8 @@ FILES :=           \
     MapT           \
     RangeIteratorT \
     RangeT         \
-    DecoratorsT
+    DecoratorsT    \
+    ComplexT
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5
