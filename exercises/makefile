@@ -9,7 +9,9 @@ FILES :=           \
     RangeIteratorT \
     RangeT         \
     DecoratorsT    \
-    ComplexT
+    ComplexT       \
+    SelectT        \
+    ProjectT
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5

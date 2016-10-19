@@ -142,7 +142,9 @@ sync:
     --include "DecoratorsT.py"               \
     --include "Complex.py"                   \
     --include "ComplexT.py"                  \
+    --include "Select.py"                    \
     --include "SelectT.py"                   \
+    --include "Project.py"                   \
     --include "ProjectT.py"                  \
     --include "CrossJoinT.py"                \
     --include "ThetaJoinT.py"                \
