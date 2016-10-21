@@ -1,4 +1,4 @@
- #!/usr/bin/env python3
+#!/usr/bin/env python3
 
 # pylint: disable = bad-whitespace
 # pylint: disable = invalid-name
