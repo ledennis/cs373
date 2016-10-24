@@ -118,8 +118,22 @@ sync:
     --include "FunctionDict.py"              \
     --include "Classes.py"                   \
     --include "Callables.py"                 \
+    --include "Regexps.py"                   \
     --exclude "*"                            \
     ../../examples/python/ examples
+	@rsync -r -t -u -v --delete              \
+    --include "Bookstore1.dtd.xml"           \
+    --include "Bookstore1.xml"               \
+    --include "Bookstore2.dtd.xml"           \
+    --include "Bookstore3.xml"               \
+    --include "Bookstore3.xsd.xml"           \
+    --exclude "*"                            \
+    ../../examples/xml/ examples
+	@rsync -r -t -u -v --delete              \
+    --include "Bookstore.json"               \
+    --include "Bookstore.schema.json"        \
+    --exclude "*"                            \
+    ../../examples/json/ examples
 	@rsync -r -t -u -v --delete              \
     --include "Hello.py"                     \
     --include "IsPrime1.py"                  \
