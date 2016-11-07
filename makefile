@@ -75,6 +75,7 @@ push:
 	git add examples
 	git add exercises
 	git add makefile
+	git add patterns
 	git add projects/collatz
 	git commit -m "another commit"
 	git push
