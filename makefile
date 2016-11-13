@@ -150,6 +150,7 @@ sync:
     --include "MethodOverriding1.java"       \
     --include "MethodOverriding2.java"       \
     --include "DynamicBinding.java"          \
+    --include "Reflection.java"              \
     --exclude "*"                            \
     ../../examples/java/ examples
 	@rsync -r -t -u -v --delete              \
@@ -194,6 +195,9 @@ sync:
     --include "StrategyPattern5.java"        \
     --include "StrategyPattern6.java"        \
     --include "SingletonPatternT.java"       \
+    --include "StrategyPattern7.java"        \
+    --include "StrategyPattern8.java"        \
+    --include "StrategyPattern9.java"        \
     --exclude "*"                            \
     ../../patterns/java/ patterns
 	@rsync -r -t -u -v --delete              \
