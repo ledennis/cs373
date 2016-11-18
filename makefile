@@ -189,6 +189,10 @@ sync:
     --exclude "*"                            \
     ../../exercises/python/ exercises
 	@rsync -r -t -u -v --delete              \
+    --include "StrategyPattern9.py"          \
+    --exclude "*"                            \
+    ../../patterns/python/ patterns
+	@rsync -r -t -u -v --delete              \
     --include "StrategyPattern1.java"        \
     --include "StrategyPattern2.java"        \
     --include "StrategyPattern3.java"        \
@@ -200,7 +204,6 @@ sync:
     --include "StrategyPattern7.java"        \
     --include "StrategyPattern8.java"        \
     --include "StrategyPattern9.java"        \
-    --include "StrategyPattern9.py"          \
     --exclude "*"                            \
     ../../patterns/java/ patterns
 	@rsync -r -t -u -v --delete              \
