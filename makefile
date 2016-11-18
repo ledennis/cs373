@@ -121,6 +121,7 @@ sync:
     --include "Classes.py"                   \
     --include "Callables.py"                 \
     --include "RegExps.py"                   \
+    --include "Reflection.py"                \
     --exclude "*"                            \
     ../../examples/python/ examples
 	@rsync -r -t -u -v --delete              \
@@ -199,6 +200,7 @@ sync:
     --include "StrategyPattern7.java"        \
     --include "StrategyPattern8.java"        \
     --include "StrategyPattern9.java"        \
+    --include "StrategyPattern9.py"          \
     --exclude "*"                            \
     ../../patterns/java/ patterns
 	@rsync -r -t -u -v --delete              \
